@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: kinova_description
+    relative_path: urdf/two_arm_m1n6s200_standalone.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/two_m1n6s200.srdf
+  CONFIG:
+    author_name: Iretiayo Akinola
+    author_email: iretibob@gmail.com
+    generated_timestamp: 1592809147
