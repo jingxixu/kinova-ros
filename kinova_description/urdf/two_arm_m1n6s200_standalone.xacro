@@ -48,11 +48,26 @@
     <origin xyz="-0.2 0 0" rpy="0 0 1.5707" />
   </joint>
 
-  <joint name="right_arm_attach" type="fixed">
-    <child link="right_arm_mount" />
-    <parent link="root" />
+<!--  <joint name="right_arm_attach" type="fixed">-->
+<!--    <child link="right_arm_mount" />-->
+<!--    <parent link="root" />-->
+<!--    <origin xyz="0.2 0 0" rpy="0 0 1.5707" />-->
+<!--  </joint>-->
+
+  <joint name="right_arm_slider_x" type="prismatic">
+    <parent link="root"/>
+    <child link="right_arm_mount_inner"/>
+    <limit effort="1000.0" lower="-0.38" upper="0" velocity="0.5"/>
+    <origin xyz="0.2 0 0" rpy="0 0 0" />
+  </joint>
+  <link name="right_arm_mount_inner"/>
+  <joint name="right_arm_slider_y" type="prismatic">
+    <parent link="right_arm_mount_inner"/>
+    <child link="right_arm_mount"/>
+    <limit effort="1000.0" lower="-0.38" upper="0" velocity="0.5"/>
     <origin xyz="0.2 0 0" rpy="0 0 1.5707" />
   </joint>
+
 
   <xacro:m1n6s200  base_parent="left_arm_mount" prefix="left"/>
 
