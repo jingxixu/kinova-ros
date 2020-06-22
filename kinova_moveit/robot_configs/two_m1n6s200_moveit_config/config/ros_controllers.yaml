@@ -19,6 +19,8 @@ hardware_interface:
     - left_joint_finger_tip_1
     - left_joint_finger_2
     - left_joint_finger_tip_2
+    - right_arm_slider_x
+    - right_arm_slider_y
     - right_joint_1
     - right_joint_2
     - right_joint_3

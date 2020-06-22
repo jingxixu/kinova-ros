@@ -15,6 +15,20 @@ controller_list:
       - right_joint_4
       - right_joint_5
       - right_joint_6
+  - name: fake_both_arms_controller
+    joints:
+      - left_joint_1
+      - left_joint_2
+      - left_joint_3
+      - left_joint_4
+      - left_joint_5
+      - left_joint_6
+      - right_joint_1
+      - right_joint_2
+      - right_joint_3
+      - right_joint_4
+      - right_joint_5
+      - right_joint_6
   - name: fake_left_gripper_controller
     joints:
       - left_joint_finger_1
@@ -23,6 +37,10 @@ controller_list:
     joints:
       - right_joint_finger_1
       - right_joint_finger_2
+  - name: fake_right_arm_slider_controller
+    joints:
+      - right_arm_slider_x
+      - right_arm_slider_y
 initial:  # Define initial robot poses.
   - group: left_arm
     pose: LeftUp
